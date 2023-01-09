@@ -1,4 +1,4 @@
-<template>
+<template lang="">
     <div>
         <h1>Header</h1>
     </div>
@@ -8,5 +8,5 @@
 
 </script>
 
-<style>
+<style lang="scss">
 </style>
