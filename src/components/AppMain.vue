@@ -8,7 +8,16 @@
 
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+    div.container {
+        width: 70%;
+        height: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+    }
+
     h2 {
         color: white;
     }

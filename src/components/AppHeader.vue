@@ -69,7 +69,8 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+@use '../styles/partials/variables' as *;
 
     div.container {
         width: 70%;
@@ -97,6 +98,11 @@ export default {
         
         li {
             padding-right: 1.5rem;
+            
+            &.active,
+            &:hover {
+                color: $text-color1;
+            }
         }
     }
 </style>
