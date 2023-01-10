@@ -124,7 +124,7 @@ import ComicsComponent from './ComicsComponent.vue';
         <div class="my-container">
             <div class="cards">
                 <ComicsComponent v-for="comic in comicsList"
-                :imagePath="comic.thumb" :serie="comic.series" :dcType="comic.type" />
+                :imagePath="comic.thumb" :serie="comic.series" :dcType="comic.type" :dcPrice="comic.price" />
             </div>
         </div>
     </section>

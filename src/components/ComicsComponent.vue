@@ -13,9 +13,7 @@
 <template>
     <div class="comic-card">
         <div class="card-container">
-            <div class="hover">
-                <span class="hover-type"> {{ dcType }}</span>
-            </div>
+            <span class="hover"> {{ dcType }}  {{ dcPrice }}</span>
             <img :src="imagePath" :alt="serie">
         </div>
         <h4> {{ serie }}</h4>
@@ -43,7 +41,7 @@
         }
     }
 
-    .hover-type {
+    .hover {
         position: absolute;
         background-color: #535353b6;
         color: rgb(255, 255, 255);
@@ -53,7 +51,7 @@
         display: none;
     }
 
-    .card-container:hover .hover-type  {
+    .card-container:hover .hover  {
         display: block;
     }
 
