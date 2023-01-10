@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header {
-    height: 20vh;
+body {
+    font-family: 'Lato', sans-serif;
 }
 
-main {
-    background-color: #1c1c1c;
-    height: 20vh;
+.my-container {
+    width: 70%;
+    margin: auto;
 }
 
-footer {
-    height: 60vh;
-}
