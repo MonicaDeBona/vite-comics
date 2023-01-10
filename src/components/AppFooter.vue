@@ -84,7 +84,7 @@
         background-image: url(../assets/imgs/footer-bg.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        padding: 3rem;
+        padding: 3rem 0;
     }
 
     .footer-link {
@@ -108,7 +108,7 @@
     }
     .bottom-footer {
         background-color: $footer-color;
-        padding: 2rem;
+        padding: 2rem 0;
     }
 
     .bottom-footer-content {
