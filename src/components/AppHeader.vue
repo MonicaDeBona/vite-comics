@@ -89,7 +89,7 @@ export default {
             height: 100%;
             
             li {
-                margin-right: 1.5rem;
+                margin-left: 1.5rem;
                 color: $nav-accent-color;
                 font-weight: 700;
                 height: 100%;

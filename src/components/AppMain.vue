@@ -112,6 +112,9 @@
 </script>
 
 <template>
+    <section class="jumbo">
+
+    </section>
     <section class="main-content">
         <div class="my-container">
             <h2>> Content goes here &lt;</h2>
@@ -134,6 +137,10 @@
 <style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
+    .jumbo {
+        height: 400px;
+        background-image: url(../assets/imgs/jumbotron.jpg);
+    }
     .main-content {
         background-color: $main-color;
     }
