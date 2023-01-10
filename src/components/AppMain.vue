@@ -1,6 +1,11 @@
 <script>
+import ComicsComponent from './ComicsComponent.vue';
+
     export default {
         name: 'AppMain',
+        components: {
+            ComicsComponent
+        },
         data() {
             return {
                 blueLogos: [
@@ -117,7 +122,12 @@
     </section>
     <section class="main-content">
         <div class="my-container">
-            <h2>> Content goes here &lt;</h2>
+            <div class="cards">
+                <div class="card">
+                    <ComicsComponent v-for="comic in comicsList"
+                    :imagePath="comic.thumb" :serie="comic.series" />
+                </div>
+            </div>
         </div>
     </section>
     <section class="blue-banner">
@@ -165,6 +175,10 @@
                 padding-right: 1rem;
             }
         }
+    }
+
+    .card {
+        display: flex;
     }
 
 </style>
