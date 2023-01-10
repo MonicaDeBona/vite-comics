@@ -3,7 +3,9 @@
         name: 'ComicsComponent',
         props: [
             'imagePath',
-            'serie'
+            'serie',
+            'dcPrice',
+            'dcType'
         ],
     }
 </script>
@@ -11,6 +13,9 @@
 <template>
     <div class="comic-card">
         <div class="card-container">
+            <div class="hover">
+                <span class="hover-type"> {{ dcType }}</span>
+            </div>
             <img :src="imagePath" :alt="serie">
         </div>
         <h4> {{ serie }}</h4>
@@ -24,22 +29,37 @@
     .comic-card {
         width: calc(100% / 6);
         padding: 1rem;
+        text-transform: uppercase;
     }
 
     .card-container {
         width: 180px;
         height: 180px;
         overflow: hidden;
+        position: relative;
 
         img {
             width: 100%;
         }
     }
 
+    .hover-type {
+        position: absolute;
+        background-color: #535353b6;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        width: 100%;
+        padding: .8rem;
+        display: none;
+    }
+
+    .card-container:hover .hover-type  {
+        display: block;
+    }
+
     h4 {
         color: $white-color;
         font-weight: 400;
         padding: 1rem 0 3rem 0;
-        text-transform: uppercase;
     }
 </style>

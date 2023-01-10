@@ -9,7 +9,7 @@
             <div class="footer-link">
                 <ul>
                     <li>
-                        <h3>DC COMICS</h3>
+                        <h2>DC COMICS</h2>
                     </li>
                     <li>Charters</li>
                     <li>Comics</li>
@@ -19,7 +19,7 @@
                     <li>Videos</li>
                     <li>News</li>
                     <li>
-                        <h3>SHOP</h3>
+                        <h2>SHOP</h2>
                     </li>
                     <li>Shop DC</li>
                     <li>Shop DC Collectibles</li>
@@ -27,7 +27,7 @@
 
                 <ul>
                     <li>
-                        <h3>DC</h3>
+                        <h2>DC</h2>
                     </li>
                     <li>Term Of Use</li>
                     <li>Privacy Policy (New)</li>
@@ -44,7 +44,7 @@
 
                 <ul>
                     <li>
-                        <h3>SITES</h3>
+                        <h2>SITES</h2>
                     </li>
                     <li>DC</li>
                     <li>MAD Magazine</li>
@@ -99,7 +99,7 @@
                 padding-bottom: .2rem;
                 font-size: .8rem;
 
-                h3 {
+                h2 {
                     color: $white-color;
                     padding: .5rem 0;
                 }
