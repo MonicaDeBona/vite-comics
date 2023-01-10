@@ -123,10 +123,8 @@ import ComicsComponent from './ComicsComponent.vue';
     <section class="main-content">
         <div class="my-container">
             <div class="cards">
-                <div class="card">
-                    <ComicsComponent v-for="comic in comicsList"
-                    :imagePath="comic.thumb" :serie="comic.series" />
-                </div>
+                <ComicsComponent v-for="comic in comicsList"
+                :imagePath="comic.thumb" :serie="comic.series" />
             </div>
         </div>
     </section>
@@ -177,8 +175,10 @@ import ComicsComponent from './ComicsComponent.vue';
         }
     }
 
-    .card {
+    .cards {
         display: flex;
+        flex-wrap: wrap;
+        padding: 3rem 0;
     }
 
 </style>
